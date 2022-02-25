@@ -22,7 +22,6 @@ function start() {
         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     }
 }
-
 start();
 
 const personalMovieDB = {
@@ -61,12 +60,12 @@ function detectPersonalLevel() {
 }
 detectPersonalLevel();
 
-function showMyDB() {
-    if (personalMovieDB.privat == false) {
+function showMyDB(hidden) {
+    if (!hidden) {
         console.log(personalMovieDB);
     }
 }
-showMyDB();
+showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
     for (let n = 1; n < 4; n++) {

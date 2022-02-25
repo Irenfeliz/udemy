@@ -1,6 +1,6 @@
 /* Задание на урок:
 
-1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+1) Создать переменную ersonalMovieDB.count и в неё поместить ответ от пользователя на вопрос:
 'Сколько фильмов вы уже посмотрели?'
 
 2) Создать объект personalMovieDB и в него поместить такие свойства:
@@ -23,10 +23,10 @@
 
 'use strict';
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?' , '');
+const ersonalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?' , '');
 
 const personalMovieDB = {
-    count: numberOfFilms,
+    count: ersonalMovieDB.count,
     movies: {},
     actors: {},
     genres: [],
